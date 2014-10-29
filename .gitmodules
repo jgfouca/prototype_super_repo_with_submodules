@@ -1,0 +1,4 @@
+[submodule "TPLs/prototype_external"]
+	path = TPLs/prototype_external
+	url = https://github.com/jgfouca/prototype_external.git
+	branch = master
