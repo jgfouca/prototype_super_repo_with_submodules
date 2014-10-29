@@ -16,9 +16,7 @@ LINKFLAGS := -L $(TPL_LOC)/prototype_external
 program: $(OBJECTS) lib
 	$(CPP) $(LINKFLAGS) $(OBJECTS) -o program -ldependency
 
-lib: $(TPL_LOC)/prototype_external/libdependency.a
-
-$(TPL_LOC)/prototype_external/libdependency.a:
+lib:
 	cd $(TPL_LOC)/prototype_external && make
 
 $(OBJECTS): %.o: %.cpp *.hpp
